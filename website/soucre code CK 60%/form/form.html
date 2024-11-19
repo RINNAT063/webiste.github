@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MẪU FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+    <a href="#5" id="login">Đăng nhập</a>
+    <div class="overlay"></div>
+        <div class="login-modal">
+            <button class="x">X</button>
+            <h2>Gõ thông tin đăng nhập</h2>
+            <form>
+                <label for="username">Tên tài khoản:</label>
+                <input type="text" minlength="3" required id="username" placeholder="Nhập tên tài khoản">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" maxlength="8" required id="password" placeholder="Nhập mật khẩu">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Duy trì đăng nhập</label>
+                </div>
+                <div style="margin-top: 20px;">
+                    <input type="submit" value="Đăng nhập" class="login-btn">
+                    <input type="reset" value="Hủy" class="cancel-btn">
+                </div>
+            </form>
+        </div>
+    <script>
+        $(document).ready(function() {
+            $('#login').click(function() {
+            $('.overlay, .login-modal').fadeIn();
+            });
+            $('.x, .overlay').click(function() {
+            $('.overlay, .login-modal').fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>
