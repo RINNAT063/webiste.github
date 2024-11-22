@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>TÌM HIỂU WEBGL</title>
+    <title>WEBGL WARRIORS</title>
   </head>
   <body>
     <h1> REPO DÀNH RIÊNG CHO NHÓM WEBGL WARRIORS </h1>
